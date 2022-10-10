@@ -1,0 +1,136 @@
+import os
+import glob
+'''将CASIA-SURF图像集中的真RGB、depth图片、标签写到记事本txt中'''
+
+colorf = []
+depthf = []
+#irf = []
+ft=open('data\\train.txt','a')
+#f.write('rgb' +','+'depth'+','+'label'+'\n')
+root = 'D:\\lcy\\feathernet\\dataset\\'
+froot =os.path.join(root,'real_part\\real_train_part\\')
+
+fname = os.listdir(froot)
+#print('fname',fname)
+for i in fname:
+    file=glob.glob(os.path.join(froot,i)+'\\*\\*\\*.jpg')
+    for j in range(len(file)):
+        file[j] =file[j].replace(root,'')
+        #print('file[j]',file[j])
+        s = file[j].split('\\')
+        if 'color' in s:
+            colorf.append(file[j])
+        elif 'depth' in s:
+            depthf.append(file[j])
+        else:
+            pass
+            #irf.append(file[j])
+    for x in range(len(colorf)):
+        a = colorf[x]
+        s1 = a.split('\\')
+        for y in range(len(depthf)):
+            b = depthf[y]
+            s2 = b.split('\\')
+            if s1[-1]==s2[-1]:
+                ft.write(a+','+b+','+'1'+'\n')
+                break
+    colorf.clear()
+    depthf.clear()     
+
+ft.close()
+
+
+import os
+import glob
+'''将CASIA-SURF图像集中的真RGB、depth和ir图片、标签写到记事本train.txt中'''
+
+colorf = []
+depthf = []
+irf = []
+ft=open('data\\train.txt','a')
+#ft.write('rgb' +','+'depth'+','+'ir'+','+'label'+'\n')
+root = 'D:\\lcy\\feathernet\\dataset\\'
+froot =os.path.join(root,'real_part\\real_train_part\\')
+
+fname = os.listdir(froot)
+#print('fname',fname)
+for i in fname:
+    file=glob.glob(os.path.join(froot,i)+'\\*\\*\\*.jpg')
+    for j in range(len(file)):
+        file[j] =file[j].replace(root,'')
+        #print('file[j]',file[j])
+        s = file[j].split('\\')
+        if 'color' in s:
+            colorf.append(file[j])
+        elif 'depth' in s:
+            depthf.append(file[j])
+        elif 'ir' in s:
+            irf.append(file[j])
+    for x in range(len(colorf)):
+        a = colorf[x]
+        s1 = a.split('\\')
+        for y in range(len(depthf)):
+            b = depthf[y]            
+            s2 = b.split('\\')
+            if s1[-1]==s2[-1]:
+                ft.write(a+','+b+',')
+                break
+        for z in range(len(irf)):
+            c = irf[z]
+            s3 = c.split('\\')
+            if s1[-1]==s3[-1]:
+                ft.write(c+','+'1'+'\n')
+                break
+    colorf.clear()
+    depthf.clear() 
+    irf.clear()
+
+ft.close()
+
+
+import os
+import glob
+'''将CASIA-SURF图像集中的真RGB、depth和ir图片、标签写到记事本val.txt中'''
+
+colorf = []
+depthf = []
+irf = []
+ft=open('data\\val.txt','a')
+#ft.write('rgb' +','+'depth'+','+'ir'+','+'label'+'\n')
+root = 'D:\\lcy\\feathernet\\dataset\\'
+froot =os.path.join(root,'real_part\\real_val_part\\')
+
+fname = os.listdir(froot)
+#print('fname',fname)
+for i in fname:
+    file=glob.glob(os.path.join(froot,i)+'\\*\\*\\*.jpg')
+    for j in range(len(file)):
+        file[j] =file[j].replace(root,'')
+        #print('file[j]',file[j])
+        s = file[j].split('\\')
+        if 'color' in s:
+            colorf.append(file[j])
+        elif 'depth' in s:
+            depthf.append(file[j])
+        elif 'ir' in s:
+            irf.append(file[j])
+    for x in range(len(colorf)):
+        a = colorf[x]
+        s1 = a.split('\\')
+        for y in range(len(depthf)):
+            b = depthf[y]            
+            s2 = b.split('\\')
+            if s1[-1]==s2[-1]:
+                ft.write(a+','+b+',')
+                break
+        for z in range(len(irf)):
+            c = irf[z]
+            s3 = c.split('\\')
+            if s1[-1]==s3[-1]:
+                ft.write(c+','+'1'+'\n')
+                break
+    colorf.clear()
+    depthf.clear() 
+    irf.clear()
+
+ft.close()

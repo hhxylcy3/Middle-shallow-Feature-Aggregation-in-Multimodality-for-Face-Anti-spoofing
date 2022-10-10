@@ -1,0 +1,72 @@
+from torch.utils.data import Dataset,DataLoader
+from torchvision import transforms,utils
+import os
+from PIL import Image
+
+'''定义加载数据的类（能读取一个样本和一个标签）'''
+
+
+#定义自己的类
+class Mydataset(Dataset):
+    def __init__(self,root,txt,transform=None):         #root:图片存放路径的根目录;txt存放图片路径的记事本文件的路径；
+        super(Mydataset,self).__init__()          #对继承自父类的属性进行初始化
+        fh = open(txt,'r')    #以只读方式打开文本文件（存放图片路径和标签）
+        imgs = []
+        for line in fh:
+            line = line.strip('\n')        #删除字符串首尾的回车符
+            line = line.rstrip('\n')
+            words = line.split()      #用split将该行分割成列表
+            imgs.append((words[0],words[1],words[2],int(words[3])))
+        self.imgs = imgs
+        self.transform = transform
+        self.root=root
+        
+    def __getitem__(self,index):
+        fnr,fnd,fni,label = self.imgs[index]
+       
+        imgr = Image.open(self.root+fnr)
+        imgd = Image.open(self.root+fnd)
+        imgi = Image.open(self.root+fni)
+        if self.transform is not None:
+            imgr = self.transform(imgr)
+            imgd = self.transform(imgd)
+            imgi = self.transform(imgi)
+            
+        return imgr,imgd,imgi,label
+    
+    def __len__(self):
+        return len(self.imgs)
+    
+'''加载数据集'''
+if __name__ == '__main__':
+    transform_cd = transforms.Compose([transforms.Resize(250),
+                                       transforms.RandomCrop(224),
+                                       transforms.RandomHorizontalFlip(),
+                                       transforms.ToTensor(),
+                                ])
+    froot =os.getcwd()
+    #print(froot)
+   
+    train_data = Mydataset(root=froot,txt ='.\\1.txt',transform=transform_cd)
+    datas = DataLoader(train_data,batch_size=4,shuffle=True,drop_last=False)
+    cnt=0
+    to_pil_image = transforms.ToPILImage()
+    for imgr,imgd,imgi,label in datas:
+        if cnt>=1:     #只加载一轮
+            break
+        #print(img.size())
+        image1 = imgr[0]   # 消去batch的维度，即取第一批中的第一个图像
+        image2 = imgd[0] 
+        image3 = imgi[0] 
+        image1 = to_pil_image(image1)
+        image2 = to_pil_image(image2)
+        image3 = to_pil_image(image3)
+        image1.show()
+        image2.show()
+        image3.show()
+        #plt.imshow(image)      #make_grid的作用是将若干幅图像拼成一幅图像
+        #plt.show()       #plt.imshow()函数负责对图像进行处理，并显示其格式，但是不能显示。其后跟着plt.show()才能显示出来。
+        print(list(label.numpy()))
+        print(cnt,label[0],label[1])
+        cnt +=1
+    

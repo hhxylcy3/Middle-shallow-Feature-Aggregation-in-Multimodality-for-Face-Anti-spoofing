@@ -1,0 +1,38 @@
+一：
+model is: resnetDLAS_A
+
+调用stat函数的结果：
+Total params: 61.06MB
+
+Total memory: 115.28MB
+Total MAdd: 18.17GMAdd
+Total Flops: 9.1GFlops
+Total Flops(Conv Only): 9.07GFlops
+Total MemR+W: 466.99MB
+
+调用count_params函数的结果：
++ Number of FLOPs: 9081.75M
+The network has 61059520 params.
+total_params 61059520
+model is: resnetDLAS_A
+
+
+
+
+二：
+model is: FeatherNet_siam
+
+调用stat函数的结果：
+Total params: 1.91MB
+
+Total memory: 53.96MB
+Total MAdd: 528.56MMAdd
+Total Flops: 269.11MFlops
+Total Flops(Conv Only): 254.74MFlops
+Total MemR+W: 116.55MB
+
+调用count_params函数的结果：
++ Number of FLOPs: 260.01M
+The network has 1909410 params.
+total_params 1909410
+model is: FeatherNet_siam

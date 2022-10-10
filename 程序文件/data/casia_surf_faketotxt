@@ -1,0 +1,215 @@
+import os
+import glob
+'''功能描述：将SURF中的假图像（RGB/DEPTH）读到txt中'''
+
+root = 'D:\\lcy\\feathernet\\dataset\\'
+rootdir =os.path.join(root,'fake_part\\fake_train_part\\')
+
+file = os.listdir(rootdir)  #CLKJ_AS
+#print('file',file)
+ft = open('data\\train.txt','w')
+ft.write('rgb' +','+'depth'+','+'label'+'\n')
+colorf = []
+depthf = []
+#irf = []
+
+
+for i in file:         #CLKJ_AS
+    f = os.listdir(rootdir+i)
+    del f[:2]         #只保留en_s/en_b/enm_s/enm_b文件夹
+    for j in f:       
+        tempath = os.path.join(rootdir,i,j,)   # 取出所有en_b,enm_s,enm_b文件夹的路径
+        #print('tempath',tempath)
+        fn = glob.glob(tempath+'\\*\\*.jpg')
+        for k in range(len(fn)):                               
+            fn[k] = fn[k].replace(root,'')     #删除绝对路径，只保留相对路径
+            #print('fn[k]',fn[k])
+            s = fn[k].split('\\') 
+            if 'color' in s:        #将color类型的图片放在colorf列表中
+                colorf.append(fn[k])
+            elif 'depth' in s:
+                depthf.append(fn[k])
+            else:
+                pass
+                #irf.append(fn[k])
+        for x in range(len(colorf)):
+            a = colorf[x]
+            s1 = a.split('\\')
+            for y in range(len(depthf)):
+                b = depthf[x]
+                s2 = b.split('\\')
+                if s1[-1]==s2[-1]:
+                    ft.write(a +','+b+','+'0'+'\n')
+                    break
+        colorf.clear()
+        depthf.clear()
+                
+ft.close()
+
+
+
+import os
+import glob
+'''功能描述：将SURF中的假图像（RGB/DEPTH/ir）读到txt中'''
+
+root = 'D:\\lcy\\feathernet\\dataset\\'
+rootdir =os.path.join(root,'fake_part\\fake_train_part\\')
+
+file = os.listdir(rootdir)  #CLKJ_AS
+#print('file',file)
+ft = open('data\\train.txt','w')
+ft.write('rgb'+','+'depth'+','+'ir'+','+'label'+'\n')
+colorf = []
+depthf = []
+irf = []
+
+
+for i in file:         #CLKJ_AS
+    f = os.listdir(rootdir+i)
+    del f[:3]         #只保留en_b/enm_s/enm_b文件夹
+    for j in f:       
+        tempath = os.path.join(rootdir,i,j,)   # 取出所有en_b,enm_s,enm_b文件夹的路径
+        #print('tempath',tempath)
+        fn = glob.glob(tempath+'\\*\\*.jpg')
+        for k in range(len(fn)):                               
+            fn[k] = fn[k].replace(root,'')     #删除绝对路径，只保留相对路径
+            #print('fn[k]',fn[k])
+            s = fn[k].split('\\') 
+            if 'color' in s:        #将color类型的图片放在colorf列表中
+                colorf.append(fn[k])
+            elif 'depth' in s:
+                depthf.append(fn[k])
+            elif 'ir' in s:
+                irf.append(fn[k])
+        for x in range(len(colorf)):
+            a = colorf[x]
+            s1 = a.split('\\')
+            for y in range(len(depthf)):
+                b = depthf[y]                
+                s2 = b.split('\\')                
+                if s1[-1]==s2[-1] and s1[-3]==s2[-3]:
+                    ft.write(a+','+b+',')
+                    break
+            for z in range(len(irf)):
+                c = irf[z]
+                s3 = c.split('\\')
+                if s1[-1]==s3[-1] and s1[-3]==s3[-3]:
+                    ft.write(c+','+'0'+'\n')
+                    break
+        colorf.clear()
+        depthf.clear()
+        irf.clear()
+                
+ft.close()
+
+
+import os
+import glob
+'''功能描述：将SURF中的假图像（RGB/DEPTH/ir）读到train.txt中'''
+
+root = 'D:\\lcy\\feathernet\\dataset\\'
+rootdir =os.path.join(root,'fake_part\\fake_train_part\\')
+
+file = os.listdir(rootdir)  #CLKJ_AS
+#print('file',file)
+ft = open('data\\train.txt','w')
+ft.write('rgb'+','+'depth'+','+'ir'+','+'label'+'\n')
+colorf = []
+depthf = []
+irf = []
+
+
+for i in file:         #CLKJ_AS
+    f = os.listdir(rootdir+i)
+    del f[0:4]         #只保留enm_s/enm_b文件夹
+   
+    for j in f:       
+        tempath = os.path.join(rootdir,i,j,)   # 取出所有en_b,enm_s,enm_b文件夹的路径
+        #print('tempath',tempath)
+        fn = glob.glob(tempath+'\\*\\*.jpg')
+        for k in range(len(fn)):                               
+            fn[k] = fn[k].replace(root,'')     #删除绝对路径，只保留相对路径
+            #print('fn[k]',fn[k])
+            s = fn[k].split('\\') 
+            if 'color' in s:        #将color类型的图片放在colorf列表中
+                colorf.append(fn[k])
+            elif 'depth' in s:
+                depthf.append(fn[k])
+            elif 'ir' in s:
+                irf.append(fn[k])
+        for x in range(len(colorf)):
+            a = colorf[x]
+            s1 = a.split('\\')
+            for y in range(len(depthf)):
+                b = depthf[y]                
+                s2 = b.split('\\')                
+                if s1[-1]==s2[-1] and s1[-3]==s2[-3]:
+                    ft.write(a+','+b+',')
+                    break
+            for z in range(len(irf)):
+                c = irf[z]
+                s3 = c.split('\\')
+                if s1[-1]==s3[-1] and s1[-3]==s3[-3]:
+                    ft.write(c+','+'0'+'\n')
+                    break
+        colorf.clear()
+        depthf.clear()
+        irf.clear()
+                
+ft.close()
+
+
+import os
+import glob
+'''功能描述：将SURF中的假图像（RGB/DEPTH/ir）读到val.txt中'''
+
+root = 'D:\\lcy\\feathernet\\dataset\\'
+rootdir =os.path.join(root,'fake_part\\fake_val_part\\')
+
+file = os.listdir(rootdir)  #CLKJ_AS
+#print('file',file)
+ft = open('data\\val.txt','w')
+ft.write('rgb'+','+'depth'+','+'ir'+','+'label'+'\n')
+colorf = []
+depthf = []
+irf = []
+
+
+for i in file:         #CLKJ_AS
+    f = os.listdir(rootdir+i)
+    del f[:3]         #只保留/en_b/enm_s文件夹
+    del f[-1]
+    for j in f:       
+        tempath = os.path.join(rootdir,i,j,)   # 取出所有en_b,enm_s,enm_b文件夹的路径
+        #print('tempath',tempath)
+        fn = glob.glob(tempath+'\\*\\*.jpg')
+        for k in range(len(fn)):                               
+            fn[k] = fn[k].replace(root,'')     #删除绝对路径，只保留相对路径
+            #print('fn[k]',fn[k])
+            s = fn[k].split('\\') 
+            if 'color' in s:        #将color类型的图片放在colorf列表中
+                colorf.append(fn[k])
+            elif 'depth' in s:
+                depthf.append(fn[k])
+            elif 'ir' in s:
+                irf.append(fn[k])
+        for x in range(len(colorf)):
+            a = colorf[x]
+            s1 = a.split('\\')
+            for y in range(len(depthf)):
+                b = depthf[y]                
+                s2 = b.split('\\')                
+                if s1[-1]==s2[-1] and s1[-3]==s2[-3]:
+                    ft.write(a+','+b+',')
+                    break
+            for z in range(len(irf)):
+                c = irf[z]
+                s3 = c.split('\\')
+                if s1[-1]==s3[-1] and s1[-3]==s3[-3]:
+                    ft.write(c+','+'0'+'\n')
+                    break
+        colorf.clear()
+        depthf.clear()
+        irf.clear()
+                
+ft.close()

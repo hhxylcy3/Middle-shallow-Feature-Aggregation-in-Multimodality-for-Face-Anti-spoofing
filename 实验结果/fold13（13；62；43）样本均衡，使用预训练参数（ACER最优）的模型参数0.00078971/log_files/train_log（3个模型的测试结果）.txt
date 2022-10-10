@@ -1,0 +1,21 @@
+
+加载模型103的测试结果：
+Best Epoch 0 results:
+Train: Loss: 0.00000	
+Test:  Loss: 0.02487	
+Test:  TPR@FPR=10-2: 0.9997	TPR@FPR=10-3: 0.9932	TPR@FPR=10-4: 0.8727	
+Test:  TN:40536  FP:373  FN:7  TP:17451  APCER:0.009118  NPCER:0.000401  ACER:0.00475938
+
+加载模型58的测试结果：
+Best Epoch 0 results:
+Train: Loss: 0.00000	
+Test:  Loss: 0.03270	
+Test:  TPR@FPR=10-2: 0.9997	TPR@FPR=10-3: 0.9840	TPR@FPR=10-4: 0.7406	
+Test:  TN:40423  FP:486  FN:6  TP:17452  APCER:0.011880  NPCER:0.000344  ACER:0.00611185
+
+加载模型75的测试结果：
+Best Epoch 0 results:
+Train: Loss: 0.00000	
+Test:  Loss: 0.03312	
+Test:  TPR@FPR=10-2: 0.9996	TPR@FPR=10-3: 0.9856	TPR@FPR=10-4: 0.0000	
+Test:  TN:40459  FP:450  FN:6  TP:17452  APCER:0.011000  NPCER:0.000344  ACER:0.00567185

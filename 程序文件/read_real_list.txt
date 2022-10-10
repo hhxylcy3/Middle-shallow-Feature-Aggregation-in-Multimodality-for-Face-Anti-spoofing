@@ -1,0 +1,34 @@
+import os
+import glob
+'''将CASIA-SURF图像集中的真(real)RGB、depth和ir图片、标签写到记事本txt中'''
+
+colorf = []
+depthf = []
+#irf = []
+f=open('1.txt','a')
+#f.write('rgb' +','+'depth'+','+'label'+'\n')
+root= os.getcwd()
+froot=root+'\\mydata\\real_part\\real_train_part\\'
+fname = os.listdir(froot)
+#print('fname',fname)
+for i in fname:
+    file=glob.glob(os.path.join(froot,i)+'\\*\\*\\*.jpg')
+    for j in range(len(file)):
+        file[j] =file[j].replace(root,'')
+        #print('file[j]',file[j])
+        s = file[j].split('\\')
+        if 'color' in s:
+            colorf.append(file[j])
+        elif 'depth' in s:
+            depthf.append(file[j])
+        else:
+            pass
+            #irf.append(file[j])
+for k in range(len(colorf)):
+    a=colorf[k]
+    b=depthf[k]
+    s1 = a.split('\\')
+    s2 = b.split('\\')
+    if s1[-1]==s2[-1]:
+        f.write(a+','+b+','+'1'+'\n')
+f.close()

@@ -1,0 +1,56 @@
+训练模型的参数：（训练集样本不均衡，训练集为en-b,enm-s,enm-b;测试集为en-b,enm-s）
+layer1：16-48，扩展率为1，循环次数为3；layer2：48-64；扩展率为6，循环次数为2；layer3：64-128；扩展率为4，循环次数为3；layer4：384-512；扩展率为1，循环次数为2
+
+最佳训练结果：（以ACER为标准）
+Best Epoch 57 results:
+Train: Loss: 0.00597	
+Test:  Loss: 0.00183	
+Test:  TPR@FPR=10-2: 1.0000	TPR@FPR=10-3: 1.0000	TPR@FPR=10-4: 0.9977	
+Test:  TN:4428  FP:4  FN:0  TP:2994  APCER:0.000903  NPCER:0.000000  ACER:0.00045126
+
+次佳训练结果：
+Epoch 17 results:
+Train: Loss: 0.01308	
+Test:  Loss: 0.00326	
+Test:  TPR@FPR=10-2: 1.0000	TPR@FPR=10-3: 0.9997	TPR@FPR=10-4: 0.9987	
+Test:  TN:4426  FP:6  FN:1  TP:2993  APCER:0.001354  NPCER:0.000334  ACER:0.00084390
+
+
+
+稍次训练结果：
+Best Epoch 27 results:
+Train: Loss: 0.00774	
+Test:  Loss: 0.00214	
+Test:  TPR@FPR=10-2: 1.0000	TPR@FPR=10-3: 0.9997	TPR@FPR=10-4: 0.9990	
+Test:  TN:4425  FP:7  FN:1  TP:2993  APCER:0.001579  NPCER:0.000334  ACER:0.00095671
+
+最佳训练结果：（以TPR@FPR为准）
+Epoch 41 results:
+Train: Loss: 0.00708	
+Test:  Loss: 0.00672	
+Test:  TPR@FPR=10-2: 1.0000	TPR@FPR=10-3: 1.0000	TPR@FPR=10-4: 1.0000	
+Test:  TN:4410  FP:22  FN:0  TP:2994  APCER:0.004964  NPCER:0.000000  ACER:0.00248195
+
+次佳训练结果：
+Epoch 34 results:
+Train: Loss: 0.00691	
+Test:  Loss: 0.00794	
+Test:  TPR@FPR=10-2: 1.0000	TPR@FPR=10-3: 1.0000	TPR@FPR=10-4: 1.0000	
+Test:  TN:4405  FP:27  FN:0  TP:2994  APCER:0.006092  NPCER:0.000000  ACER:0.00304603
+
+
+
+
+
+'''
+训练集：训练集总数：37983  fake总数：20098   （样本相对均衡，true图像采用直接复制一份的方式扩充样本数量）
+e_b  en_s  enm_b
+
+
+测试集：  测试集总数：7426   fake总数：4432
+en_b  enm_s
+
+
+验证数据集：测试集总数：58368 fake总数：40909
+e_s  en_b   enm_s
+'''

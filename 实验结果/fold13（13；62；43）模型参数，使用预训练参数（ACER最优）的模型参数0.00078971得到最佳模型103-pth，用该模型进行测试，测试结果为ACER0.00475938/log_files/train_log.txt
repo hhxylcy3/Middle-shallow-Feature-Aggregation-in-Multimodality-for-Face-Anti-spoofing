@@ -1,0 +1,383 @@
+
+Best Epoch 0 results:
+Train: Loss: 0.00000	
+Test:  Loss: 0.02487	
+Test:  TPR@FPR=10-2: 0.9997	TPR@FPR=10-3: 0.9932	TPR@FPR=10-4: 0.8727	
+Test:  TN:40536  FP:373  FN:7  TP:17451  APCER:0.009118  NPCER:0.000401  ACER:0.00475938
+
+
+Directory data\opts\exp1FeatherNetCC\fold13 already exists.
+fin_path: data\opts\exp1FeatherNetCC\fold13\checkpoints\103.pth.tar 
+=> loading checkpoint 'data\opts\exp1FeatherNetCC\fold13\checkpoints\103.pth.tar '
+=> loaded checkpoint '103.pth.tar ' (epoch 103)
+Test Epoch 0[0.00%]: [31.52(31.519) s]	Loss: 0.00106(0.00106)	
+Accuracy: 1.00000	
+Test Epoch 0[4.29%]: [0.06(2.922) s]	Loss: 1.01499(0.12202)	
+Accuracy: 0.97443	
+Test Epoch 0[8.58%]: [0.06(1.559) s]	Loss: 0.07567(0.11168)	
+Accuracy: 0.97768	
+Test Epoch 0[12.88%]: [0.06(1.076) s]	Loss: 0.00891(0.10546)	
+Accuracy: 0.98085	
+Test Epoch 0[17.17%]: [0.06(0.828) s]	Loss: 0.02780(0.08989)	
+Accuracy: 0.98171	
+Test Epoch 0[21.46%]: [0.06(0.678) s]	Loss: 0.04478(0.07814)	
+Accuracy: 0.98162	
+Test Epoch 0[25.75%]: [0.06(0.576) s]	Loss: 0.15087(0.07709)	
+Accuracy: 0.98002	
+Test Epoch 0[30.04%]: [0.06(0.504) s]	Loss: 0.14144(0.08826)	
+Accuracy: 0.97711	
+Test Epoch 0[34.33%]: [0.05(0.450) s]	Loss: 0.05740(0.09175)	
+Accuracy: 0.97569	
+Test Epoch 0[38.63%]: [0.06(0.407) s]	Loss: 0.00038(0.08220)	
+Accuracy: 0.97837	
+Test Epoch 0[42.92%]: [0.09(0.373) s]	Loss: 0.01045(0.08055)	
+Accuracy: 0.97927	
+Test Epoch 0[47.21%]: [0.06(0.344) s]	Loss: 0.00732(0.07340)	
+Accuracy: 0.98114	
+Test Epoch 0[51.50%]: [0.06(0.321) s]	Loss: 0.00011(0.06857)	
+Accuracy: 0.98244	
+Test Epoch 0[55.79%]: [0.05(0.301) s]	Loss: 0.22256(0.06651)	
+Accuracy: 0.98306	
+Test Epoch 0[60.09%]: [0.06(0.284) s]	Loss: 0.00000(0.06237)	
+Accuracy: 0.98404	
+Test Epoch 0[64.38%]: [0.05(0.269) s]	Loss: 0.06363(0.06599)	
+Accuracy: 0.98282	
+Test Epoch 0[68.67%]: [0.05(0.256) s]	Loss: 0.00007(0.06749)	
+Accuracy: 0.98234	
+Test Epoch 0[72.96%]: [0.06(0.245) s]	Loss: 0.00000(0.06363)	
+Accuracy: 0.98337	
+Test Epoch 0[77.25%]: [0.06(0.235) s]	Loss: 0.00020(0.06012)	
+Accuracy: 0.98429	
+Test Epoch 0[81.55%]: [0.06(0.226) s]	Loss: 0.00001(0.05698)	
+Accuracy: 0.98511	
+Test Epoch 0[85.84%]: [0.05(0.218) s]	Loss: 0.00001(0.05415)	
+Accuracy: 0.98585	
+Test Epoch 0[90.13%]: [0.06(0.210) s]	Loss: 0.00012(0.05170)	
+Accuracy: 0.98637	
+Test Epoch 0[94.42%]: [0.06(0.203) s]	Loss: 0.00001(0.04944)	
+Accuracy: 0.98699	
+Test Epoch 0[98.71%]: [0.06(0.197) s]	Loss: 0.00005(0.04784)	
+Accuracy: 0.98728	
+Test Epoch 0[103.00%]: [0.06(0.191) s]	Loss: 0.00000(0.04590)	
+Accuracy: 0.98781	
+Test Epoch 0[107.30%]: [0.05(0.186) s]	Loss: 0.00000(0.04419)	
+Accuracy: 0.98817	
+Test Epoch 0[111.59%]: [0.06(0.181) s]	Loss: 0.00001(0.04373)	
+Accuracy: 0.98839	
+Test Epoch 0[115.88%]: [0.06(0.177) s]	Loss: 0.00000(0.04216)	
+Accuracy: 0.98881	
+Test Epoch 0[120.17%]: [0.05(0.173) s]	Loss: 0.00694(0.04417)	
+Accuracy: 0.98777	
+Test Epoch 0[124.46%]: [0.06(0.169) s]	Loss: 0.00000(0.04265)	
+Accuracy: 0.98819	
+Test Epoch 0[128.76%]: [0.09(0.166) s]	Loss: 0.03843(0.04146)	
+Accuracy: 0.98837	
+Test Epoch 0[133.05%]: [0.06(0.162) s]	Loss: 0.00001(0.04052)	
+Accuracy: 0.98865	
+Test Epoch 0[137.34%]: [0.06(0.159) s]	Loss: 0.00164(0.03953)	
+Accuracy: 0.98890	
+Test Epoch 0[141.63%]: [0.06(0.156) s]	Loss: 0.00070(0.03843)	
+Accuracy: 0.98924	
+Test Epoch 0[145.92%]: [0.09(0.153) s]	Loss: 0.00000(0.03751)	
+Accuracy: 0.98946	
+Test Epoch 0[150.21%]: [0.06(0.151) s]	Loss: 0.00020(0.03646)	
+Accuracy: 0.98976	
+Test Epoch 0[154.51%]: [0.06(0.148) s]	Loss: 0.02228(0.03771)	
+Accuracy: 0.98927	
+Test Epoch 0[158.80%]: [0.06(0.146) s]	Loss: 0.00080(0.03670)	
+Accuracy: 0.98956	
+Test Epoch 0[163.09%]: [0.06(0.144) s]	Loss: 0.00037(0.03574)	
+Accuracy: 0.98983	
+Test Epoch 0[167.38%]: [0.06(0.141) s]	Loss: 0.04743(0.03542)	
+Accuracy: 0.98993	
+Test Epoch 0[171.67%]: [0.06(0.139) s]	Loss: 6.68259(0.05292)	
+Accuracy: 0.98831	
+Test Epoch 0[175.97%]: [0.06(0.137) s]	Loss: 0.00000(0.06330)	
+Accuracy: 0.98662	
+Test Epoch 0[180.26%]: [0.05(0.136) s]	Loss: 0.00004(0.06182)	
+Accuracy: 0.98694	
+Test Epoch 0[184.55%]: [0.06(0.134) s]	Loss: 0.00000(0.06045)	
+Accuracy: 0.98717	
+Test Epoch 0[188.84%]: [0.05(0.132) s]	Loss: 0.00007(0.05909)	
+Accuracy: 0.98746	
+Test Epoch 0[193.13%]: [0.06(0.131) s]	Loss: 0.00000(0.05779)	
+Accuracy: 0.98774	
+Test Epoch 0[197.42%]: [0.06(0.129) s]	Loss: 0.04580(0.05845)	
+Accuracy: 0.98726	
+Test Epoch 0[201.72%]: [0.11(0.128) s]	Loss: 0.00000(0.05773)	
+Accuracy: 0.98733	
+Test Epoch 0[206.01%]: [0.05(0.126) s]	Loss: 0.00000(0.05656)	
+Accuracy: 0.98759	
+Test Epoch 0[210.30%]: [0.06(0.125) s]	Loss: 0.23110(0.05588)	
+Accuracy: 0.98778	
+Test Epoch 0[214.59%]: [0.06(0.124) s]	Loss: 0.00003(0.05505)	
+Accuracy: 0.98777	
+Test Epoch 0[218.88%]: [0.06(0.123) s]	Loss: 0.00100(0.05417)	
+Accuracy: 0.98795	
+Test Epoch 0[223.18%]: [0.06(0.121) s]	Loss: 0.00000(0.05313)	
+Accuracy: 0.98818	
+Test Epoch 0[227.47%]: [0.06(0.120) s]	Loss: 0.00000(0.05213)	
+Accuracy: 0.98841	
+Test Epoch 0[231.76%]: [0.06(0.119) s]	Loss: 0.00008(0.05117)	
+Accuracy: 0.98862	
+Test Epoch 0[236.05%]: [0.06(0.118) s]	Loss: 0.00000(0.05024)	
+Accuracy: 0.98883	
+Test Epoch 0[240.34%]: [0.06(0.117) s]	Loss: 0.00000(0.04934)	
+Accuracy: 0.98903	
+Test Epoch 0[244.64%]: [0.05(0.116) s]	Loss: 0.00007(0.04848)	
+Accuracy: 0.98922	
+Test Epoch 0[248.93%]: [0.06(0.115) s]	Loss: 0.00000(0.04765)	
+Accuracy: 0.98940	
+Test Epoch 0[253.22%]: [0.05(0.114) s]	Loss: 0.00228(0.04815)	
+Accuracy: 0.98937	
+Test Epoch 0[257.51%]: [0.06(0.113) s]	Loss: 0.00007(0.04744)	
+Accuracy: 0.98950	
+Test Epoch 0[261.80%]: [0.06(0.112) s]	Loss: 0.00347(0.04764)	
+Accuracy: 0.98936	
+Test Epoch 0[266.09%]: [0.06(0.112) s]	Loss: 0.07429(0.04726)	
+Accuracy: 0.98943	
+Test Epoch 0[270.39%]: [0.05(0.111) s]	Loss: 0.04803(0.04686)	
+Accuracy: 0.98940	
+Test Epoch 0[274.68%]: [0.06(0.110) s]	Loss: 0.00023(0.04731)	
+Accuracy: 0.98918	
+Test Epoch 0[278.97%]: [0.06(0.109) s]	Loss: 0.00146(0.04678)	
+Accuracy: 0.98920	
+Test Epoch 0[283.26%]: [0.06(0.109) s]	Loss: 0.00002(0.04629)	
+Accuracy: 0.98932	
+Test Epoch 0[287.55%]: [0.04(0.108) s]	Loss: 0.12703(0.04598)	
+Accuracy: 0.98933	
+Test Epoch 0[291.85%]: [0.06(0.107) s]	Loss: 0.00002(0.04554)	
+Accuracy: 0.98940	
+Test Epoch 0[296.14%]: [0.06(0.107) s]	Loss: 0.05524(0.04529)	
+Accuracy: 0.98937	
+Test Epoch 0[300.43%]: [0.05(0.106) s]	Loss: 0.00001(0.04471)	
+Accuracy: 0.98948	
+Test Epoch 0[304.72%]: [0.11(0.105) s]	Loss: 0.00000(0.04431)	
+Accuracy: 0.98950	
+Test Epoch 0[309.01%]: [0.06(0.105) s]	Loss: 0.12352(0.04407)	
+Accuracy: 0.98951	
+Test Epoch 0[313.30%]: [0.06(0.104) s]	Loss: 0.00000(0.04380)	
+Accuracy: 0.98957	
+Test Epoch 0[317.60%]: [0.05(0.103) s]	Loss: 0.00000(0.04327)	
+Accuracy: 0.98967	
+Test Epoch 0[321.89%]: [0.06(0.103) s]	Loss: 0.00002(0.04272)	
+Accuracy: 0.98981	
+Test Epoch 0[326.18%]: [0.06(0.102) s]	Loss: 0.00000(0.04216)	
+Accuracy: 0.98994	
+Test Epoch 0[330.47%]: [0.06(0.102) s]	Loss: 0.00001(0.04162)	
+Accuracy: 0.99007	
+Test Epoch 0[334.76%]: [0.06(0.101) s]	Loss: 0.00262(0.04109)	
+Accuracy: 0.99020	
+Test Epoch 0[339.06%]: [0.06(0.101) s]	Loss: 0.13727(0.04117)	
+Accuracy: 0.99008	
+Test Epoch 0[343.35%]: [0.05(0.100) s]	Loss: 0.00000(0.04198)	
+Accuracy: 0.98974	
+Test Epoch 0[347.64%]: [0.06(0.100) s]	Loss: 0.00025(0.04184)	
+Accuracy: 0.98983	
+Test Epoch 0[351.93%]: [0.05(0.099) s]	Loss: 0.23918(0.04162)	
+Accuracy: 0.98991	
+Test Epoch 0[356.22%]: [0.06(0.099) s]	Loss: 0.00263(0.04113)	
+Accuracy: 0.99003	
+Test Epoch 0[360.52%]: [0.05(0.099) s]	Loss: 0.00216(0.04140)	
+Accuracy: 0.99000	
+Test Epoch 0[364.81%]: [0.05(0.098) s]	Loss: 0.00000(0.04135)	
+Accuracy: 0.98998	
+Test Epoch 0[369.10%]: [0.05(0.098) s]	Loss: 0.09636(0.04105)	
+Accuracy: 0.98998	
+Test Epoch 0[373.39%]: [0.06(0.097) s]	Loss: 0.00001(0.04116)	
+Accuracy: 0.98992	
+Test Epoch 0[377.68%]: [0.06(0.097) s]	Loss: 0.00000(0.04069)	
+Accuracy: 0.99003	
+Test Epoch 0[381.97%]: [0.05(0.096) s]	Loss: 0.00291(0.04024)	
+Accuracy: 0.99014	
+Test Epoch 0[386.27%]: [0.06(0.096) s]	Loss: 0.03193(0.03988)	
+Accuracy: 0.99018	
+Test Epoch 0[390.56%]: [0.11(0.096) s]	Loss: 0.00002(0.03946)	
+Accuracy: 0.99029	
+Test Epoch 0[394.85%]: [0.06(0.095) s]	Loss: 0.00000(0.03948)	
+Accuracy: 0.99023	
+Test Epoch 0[399.14%]: [0.06(0.095) s]	Loss: 0.00000(0.03906)	
+Accuracy: 0.99033	
+Test Epoch 0[403.43%]: [0.06(0.095) s]	Loss: 0.00000(0.03865)	
+Accuracy: 0.99044	
+Test Epoch 0[407.73%]: [0.11(0.094) s]	Loss: 0.00000(0.03836)	
+Accuracy: 0.99047	
+Test Epoch 0[412.02%]: [0.06(0.094) s]	Loss: 0.00000(0.03801)	
+Accuracy: 0.99054	
+Test Epoch 0[416.31%]: [0.05(0.094) s]	Loss: 0.00007(0.03775)	
+Accuracy: 0.99060	
+Test Epoch 0[420.60%]: [0.06(0.093) s]	Loss: 0.00000(0.03748)	
+Accuracy: 0.99067	
+Test Epoch 0[424.89%]: [0.06(0.093) s]	Loss: 0.03767(0.03754)	
+Accuracy: 0.99060	
+Test Epoch 0[429.18%]: [0.06(0.093) s]	Loss: 0.01543(0.03750)	
+Accuracy: 0.99060	
+Test Epoch 0[433.48%]: [0.05(0.092) s]	Loss: 0.00001(0.03713)	
+Accuracy: 0.99070	
+Test Epoch 0[437.77%]: [0.07(0.092) s]	Loss: 0.00007(0.03686)	
+Accuracy: 0.99076	
+Test Epoch 0[442.06%]: [0.06(0.092) s]	Loss: 0.00168(0.03685)	
+Accuracy: 0.99076	
+Test Epoch 0[446.35%]: [0.06(0.091) s]	Loss: 0.02233(0.03652)	
+Accuracy: 0.99084	
+Test Epoch 0[450.64%]: [0.06(0.091) s]	Loss: 0.00000(0.03627)	
+Accuracy: 0.99090	
+Test Epoch 0[454.94%]: [0.06(0.091) s]	Loss: 0.00000(0.03593)	
+Accuracy: 0.99099	
+Test Epoch 0[459.23%]: [0.06(0.091) s]	Loss: 0.00043(0.03559)	
+Accuracy: 0.99107	
+Test Epoch 0[463.52%]: [0.11(0.090) s]	Loss: 0.00000(0.03526)	
+Accuracy: 0.99115	
+Test Epoch 0[467.81%]: [0.06(0.090) s]	Loss: 0.00000(0.03495)	
+Accuracy: 0.99124	
+Test Epoch 0[472.10%]: [0.06(0.090) s]	Loss: 0.07047(0.03491)	
+Accuracy: 0.99123	
+Test Epoch 0[476.39%]: [0.06(0.090) s]	Loss: 0.00004(0.03491)	
+Accuracy: 0.99120	
+Test Epoch 0[480.69%]: [0.06(0.089) s]	Loss: 0.00208(0.03463)	
+Accuracy: 0.99125	
+Test Epoch 0[484.98%]: [0.06(0.089) s]	Loss: 0.00292(0.03449)	
+Accuracy: 0.99130	
+Test Epoch 0[489.27%]: [0.06(0.089) s]	Loss: 0.00022(0.03448)	
+Accuracy: 0.99129	
+Test Epoch 0[493.56%]: [0.06(0.089) s]	Loss: 0.36511(0.03464)	
+Accuracy: 0.99120	
+Test Epoch 0[497.85%]: [0.06(0.088) s]	Loss: 0.00005(0.03465)	
+Accuracy: 0.99123	
+Test Epoch 0[502.15%]: [0.06(0.088) s]	Loss: 0.00663(0.03437)	
+Accuracy: 0.99130	
+Test Epoch 0[506.44%]: [0.06(0.088) s]	Loss: 0.00077(0.03417)	
+Accuracy: 0.99132	
+Test Epoch 0[510.73%]: [0.06(0.088) s]	Loss: 0.00111(0.03408)	
+Accuracy: 0.99132	
+Test Epoch 0[515.02%]: [0.06(0.087) s]	Loss: 0.00001(0.03404)	
+Accuracy: 0.99131	
+Test Epoch 0[519.31%]: [0.07(0.087) s]	Loss: 0.00003(0.03411)	
+Accuracy: 0.99125	
+Test Epoch 0[523.61%]: [0.06(0.087) s]	Loss: 0.00192(0.03400)	
+Accuracy: 0.99127	
+Test Epoch 0[527.90%]: [0.06(0.087) s]	Loss: 0.00002(0.03374)	
+Accuracy: 0.99134	
+Test Epoch 0[532.19%]: [0.06(0.087) s]	Loss: 0.00047(0.03365)	
+Accuracy: 0.99134	
+Test Epoch 0[536.48%]: [0.06(0.086) s]	Loss: 0.00002(0.03367)	
+Accuracy: 0.99133	
+Test Epoch 0[540.77%]: [0.06(0.086) s]	Loss: 0.00067(0.03427)	
+Accuracy: 0.99108	
+Test Epoch 0[545.06%]: [0.05(0.086) s]	Loss: 0.45119(0.03515)	
+Accuracy: 0.99088	
+Test Epoch 0[549.36%]: [0.09(0.086) s]	Loss: 0.00000(0.03501)	
+Accuracy: 0.99090	
+Test Epoch 0[553.65%]: [0.06(0.086) s]	Loss: 0.00007(0.03474)	
+Accuracy: 0.99097	
+Test Epoch 0[557.94%]: [0.06(0.085) s]	Loss: 0.00000(0.03450)	
+Accuracy: 0.99102	
+Test Epoch 0[562.23%]: [0.06(0.085) s]	Loss: 0.00000(0.03424)	
+Accuracy: 0.99109	
+Test Epoch 0[566.52%]: [0.11(0.085) s]	Loss: 0.00000(0.03398)	
+Accuracy: 0.99115	
+Test Epoch 0[570.82%]: [0.06(0.085) s]	Loss: 0.00000(0.03372)	
+Accuracy: 0.99122	
+Test Epoch 0[575.11%]: [0.05(0.085) s]	Loss: 0.00000(0.03347)	
+Accuracy: 0.99128	
+Test Epoch 0[579.40%]: [0.06(0.085) s]	Loss: 0.00000(0.03322)	
+Accuracy: 0.99135	
+Test Epoch 0[583.69%]: [0.06(0.084) s]	Loss: 0.00000(0.03298)	
+Accuracy: 0.99141	
+Test Epoch 0[587.98%]: [0.06(0.084) s]	Loss: 0.00000(0.03274)	
+Accuracy: 0.99148	
+Test Epoch 0[592.27%]: [0.06(0.084) s]	Loss: 0.00000(0.03250)	
+Accuracy: 0.99154	
+Test Epoch 0[596.57%]: [0.06(0.084) s]	Loss: 0.00000(0.03227)	
+Accuracy: 0.99160	
+Test Epoch 0[600.86%]: [0.06(0.084) s]	Loss: 0.00000(0.03204)	
+Accuracy: 0.99166	
+Test Epoch 0[605.15%]: [0.05(0.084) s]	Loss: 0.04250(0.03184)	
+Accuracy: 0.99169	
+Test Epoch 0[609.44%]: [0.05(0.083) s]	Loss: 0.00000(0.03162)	
+Accuracy: 0.99175	
+Test Epoch 0[613.73%]: [0.06(0.083) s]	Loss: 0.00002(0.03139)	
+Accuracy: 0.99181	
+Test Epoch 0[618.03%]: [0.06(0.083) s]	Loss: 0.00000(0.03125)	
+Accuracy: 0.99185	
+Test Epoch 0[622.32%]: [0.11(0.083) s]	Loss: 0.00000(0.03103)	
+Accuracy: 0.99190	
+Test Epoch 0[626.61%]: [0.06(0.083) s]	Loss: 0.00018(0.03082)	
+Accuracy: 0.99196	
+Test Epoch 0[630.90%]: [0.06(0.083) s]	Loss: 0.00000(0.03061)	
+Accuracy: 0.99201	
+Test Epoch 0[635.19%]: [0.06(0.083) s]	Loss: 0.00000(0.03041)	
+Accuracy: 0.99207	
+Test Epoch 0[639.48%]: [0.06(0.082) s]	Loss: 0.00000(0.03024)	
+Accuracy: 0.99210	
+Test Epoch 0[643.78%]: [0.05(0.082) s]	Loss: 0.00001(0.03005)	
+Accuracy: 0.99215	
+Test Epoch 0[648.07%]: [0.06(0.082) s]	Loss: 0.00000(0.02994)	
+Accuracy: 0.99216	
+Test Epoch 0[652.36%]: [0.06(0.082) s]	Loss: 0.00000(0.02975)	
+Accuracy: 0.99221	
+Test Epoch 0[656.65%]: [0.06(0.082) s]	Loss: 0.00000(0.02955)	
+Accuracy: 0.99226	
+Test Epoch 0[660.94%]: [0.06(0.082) s]	Loss: 0.00001(0.02936)	
+Accuracy: 0.99231	
+Test Epoch 0[665.24%]: [0.06(0.082) s]	Loss: 0.00000(0.02917)	
+Accuracy: 0.99236	
+Test Epoch 0[669.53%]: [0.11(0.082) s]	Loss: 0.00000(0.02899)	
+Accuracy: 0.99241	
+Test Epoch 0[673.82%]: [0.05(0.081) s]	Loss: 0.00000(0.02880)	
+Accuracy: 0.99246	
+Test Epoch 0[678.11%]: [0.06(0.081) s]	Loss: 0.00000(0.02862)	
+Accuracy: 0.99251	
+Test Epoch 0[682.40%]: [0.06(0.081) s]	Loss: 0.00000(0.02844)	
+Accuracy: 0.99256	
+Test Epoch 0[686.70%]: [0.06(0.081) s]	Loss: 0.00003(0.02826)	
+Accuracy: 0.99260	
+Test Epoch 0[690.99%]: [0.06(0.081) s]	Loss: 0.00000(0.02809)	
+Accuracy: 0.99265	
+Test Epoch 0[695.28%]: [0.06(0.081) s]	Loss: 0.00000(0.02791)	
+Accuracy: 0.99269	
+Test Epoch 0[699.57%]: [0.06(0.081) s]	Loss: 0.00000(0.02774)	
+Accuracy: 0.99274	
+Test Epoch 0[703.86%]: [0.05(0.081) s]	Loss: 0.00001(0.02757)	
+Accuracy: 0.99278	
+Test Epoch 0[708.15%]: [0.05(0.080) s]	Loss: 0.00000(0.02741)	
+Accuracy: 0.99283	
+Test Epoch 0[712.45%]: [0.06(0.080) s]	Loss: 0.00000(0.02724)	
+Accuracy: 0.99287	
+Test Epoch 0[716.74%]: [0.06(0.080) s]	Loss: 0.00010(0.02708)	
+Accuracy: 0.99291	
+Test Epoch 0[721.03%]: [0.05(0.080) s]	Loss: 0.00000(0.02692)	
+Accuracy: 0.99295	
+Test Epoch 0[725.32%]: [0.11(0.080) s]	Loss: 0.00000(0.02679)	
+Accuracy: 0.99300	
+Test Epoch 0[729.61%]: [0.06(0.080) s]	Loss: 0.00000(0.02663)	
+Accuracy: 0.99304	
+Test Epoch 0[733.91%]: [0.06(0.080) s]	Loss: 0.00016(0.02647)	
+Accuracy: 0.99308	
+Test Epoch 0[738.20%]: [0.05(0.080) s]	Loss: 0.00000(0.02632)	
+Accuracy: 0.99312	
+Test Epoch 0[742.49%]: [0.06(0.080) s]	Loss: 0.00005(0.02617)	
+Accuracy: 0.99316	
+Test Epoch 0[746.78%]: [0.06(0.079) s]	Loss: 0.00000(0.02602)	
+Accuracy: 0.99320	
+Test Epoch 0[751.07%]: [0.06(0.079) s]	Loss: 0.00000(0.02587)	
+Accuracy: 0.99324	
+Test Epoch 0[755.36%]: [0.06(0.079) s]	Loss: 0.00000(0.02572)	
+Accuracy: 0.99327	
+Test Epoch 0[759.66%]: [0.06(0.079) s]	Loss: 0.00000(0.02558)	
+Accuracy: 0.99331	
+Test Epoch 0[763.95%]: [0.06(0.079) s]	Loss: 0.00000(0.02544)	
+Accuracy: 0.99335	
+Test Epoch 0[768.24%]: [0.05(0.079) s]	Loss: 0.00000(0.02530)	
+Accuracy: 0.99339	
+Test Epoch 0[772.53%]: [0.06(0.079) s]	Loss: 0.00000(0.02516)	
+Accuracy: 0.99342	
+Test Epoch 0[776.82%]: [0.06(0.079) s]	Loss: 0.00000(0.02504)	
+Accuracy: 0.99344	
+Test Epoch 0[781.12%]: [0.05(0.079) s]	Loss: 0.00000(0.02491)	
+Accuracy: 0.99348	
+Best Epoch 0 results:
+Train: Loss: 0.00000	
+Test:  Loss: 0.02487	
+Test:  TPR@FPR=10-2: 0.9997	TPR@FPR=10-3: 0.9932	TPR@FPR=10-4: 0.8727	
+Test:  TN:40536  FP:373  FN:7  TP:17451  APCER:0.009118  NPCER:0.000401  ACER:0.00475938
